@@ -112,6 +112,9 @@ module.exports = function(RED) {
                     break;
 
                 case 'msg':
+                    payload = node.config.payload;
+                    break;
+                    
                 default: {
                     payload = message[node.config.payload];
                     break;
